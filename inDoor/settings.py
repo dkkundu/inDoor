@@ -197,3 +197,10 @@ HAYSTACK_CONNECTIONS = {
 DEFAULT_AUTO_FIELD = 'django.db.models.AutoField'
 OSCAR_DEFAULT_CURRENCY = '৳'
 
+HAYSTACK_CONNECTIONS = {
+'default': {
+'ENGINE': 'haystack.backends.simple_backend.SimpleEngine',
+'URL': 'http://127.0.0.1:8000/solr/default',
+'INCLUDE_SPELLING': True,
+},
+}
